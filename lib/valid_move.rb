@@ -4,7 +4,6 @@ def valid_move?(board, index)
     puts "That position is already populated with a value. Please try again"
   else
     true
-  
 end
 
 def position_taken?(board, index)
