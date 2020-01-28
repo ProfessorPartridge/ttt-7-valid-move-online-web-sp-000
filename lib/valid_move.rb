@@ -1,5 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
+  if position_taken(board, index) == true
+    puts "That position is already populated with a value. Please try again"
   
 end
 
