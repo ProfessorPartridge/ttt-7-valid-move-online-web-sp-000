@@ -2,7 +2,8 @@
 def valid_move?(board, index)
   if position_taken?(board, index) == true
     puts "That position is already populated with a value. Please try again"
-  else
+  elsif index.between?(0, 8) == false
+    puts "That is an invalid input. Please enter a value between 1 and 9"
     true
   end
 end
